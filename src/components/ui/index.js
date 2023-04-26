@@ -1,3 +1,4 @@
+export * from "./Additional/Additional";
 export * from "./Banner/Banner";
 export * from "./Benefits/Benefits";
 export * from "./BlueDescription/BlueDescription";
@@ -12,7 +13,9 @@ export * from "./ImageText/ImageText";
 export * from "./Logo/Logo";
 export * from "./Map/Map";
 export * from "./Navigation/Navigation";
+export * from "./OurWashFoldProcess/OurWashProcess";
 export * from "./Rgm/Rgm";
 export * from "./Source/Source";
 export * from "./Typography/Typography";
 export * from "./VisitUs/VisitUs";
+export * from "./WashProcess/WashProcess";

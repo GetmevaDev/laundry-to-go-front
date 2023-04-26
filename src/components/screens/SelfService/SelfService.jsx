@@ -2,6 +2,7 @@ import React from "react";
 
 import { Layout } from "@/components/layout";
 import {
+  Additional,
   Benefits,
   Ideal,
   ImageBannerText,
@@ -44,6 +45,8 @@ export const SelfServiceScreen = ({
       height={300}
       image="/images/extract.jpg"
     />
+    <Additional />
+
     <ImageBannerText
       image="/images/wash.jpg"
       title="Are Expandable Clothes Actually Filthy? Play SuperWash now!"

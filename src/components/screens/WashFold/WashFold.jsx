@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Layout } from "@/components/layout";
-import { Description, ImageText, Source } from "@/components/ui";
+import { Description, ImageText, Source, WashProcess } from "@/components/ui";
 
 export const WashFoldScreen = ({
   titleBanner,
@@ -29,6 +29,8 @@ export const WashFoldScreen = ({
       reverse
       description="At Laundry To Go, we understand that managing your laundry can be time-consuming and inconvenient. Our Wash and Fold service is designed to make your life easier by taking care of every step of the laundry process, from washing and drying to folding and packing. Simply drop off your laundry at our Mott St. location or schedule a pickup, and let our professional staff handle the rest."
     />
+
+    <WashProcess />
 
     <ImageText
       width={600}

@@ -1,7 +1,13 @@
 import React from "react";
 
 import { Layout } from "@/components/layout";
-import { Description, ImageText, Source } from "@/components/ui";
+import {
+  Description,
+  ImageText,
+  OurWashProcess,
+  Source,
+  WashProcess,
+} from "@/components/ui";
 
 export const PickupScreen = ({
   titleBanner,
@@ -29,6 +35,8 @@ export const PickupScreen = ({
       image="/images/extract.jpg"
       description="Experience ultimate convenience with Laundry To Go's Pickup & Delivery services. We understand that your time is valuable, which is why we offer reliable and efficient laundry pickup and delivery options to make your life easier. Let us handle your laundry needs, so you can focus on more important tasks."
     />
+
+    <OurWashProcess />
 
     <ImageText
       width={600}
