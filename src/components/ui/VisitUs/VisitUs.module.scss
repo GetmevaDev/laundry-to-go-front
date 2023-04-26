@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+.visit_us {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.visit {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 100px;
+  gap: 23px;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .visit {
+    margin: 0 auto;
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  .visit {
+    margin-bottom: 50px;
+  }
+}

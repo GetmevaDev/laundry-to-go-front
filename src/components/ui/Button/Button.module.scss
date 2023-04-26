@@ -1,0 +1,47 @@
+@import "../../../styles/variables.scss";
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: var(--font-rubik);
+  letter-spacing: -0.04px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+.blue {
+  padding: 22px 43px;
+  background: #5ab1ff;
+  border-radius: 40px;
+  &:hover {
+    background: #4993d3;
+  }
+
+  *:active {
+    background: #4993d3;
+  }
+}
+
+.dark {
+  padding: 22px 41px;
+  background: #0d39b9;
+  border-radius: 40px;
+
+  &:hover {
+    background: #092a8d;
+  }
+
+  *:active {
+    background: #092a8d;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  .button {
+  }
+}

@@ -5,7 +5,7 @@ const Meta = ({ title, description, children }) => (
   <>
     <Head>
       <title>{title}</title>
-      <link rel="icon" href="/logo.svg" />
+      <link rel="icon" href="/svg/logo.svg" />
 
       {description ? (
         <>

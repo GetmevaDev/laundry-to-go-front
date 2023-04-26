@@ -1,9 +1,16 @@
 import React from "react";
 
-import { HeaderList, Logo } from "@/components/ui";
+import { Logo, Navigation } from "@/components/ui";
 
 import styles from "./Header.module.scss";
 
-export const Header = ({ navigation }) => (
-  <header className={styles.header}>header</header>
+export const Header = () => (
+  <div className={styles.header}>
+    <div>
+      <Logo />
+    </div>
+    <div className={styles.nav}>
+      <Navigation />
+    </div>
+  </div>
 );

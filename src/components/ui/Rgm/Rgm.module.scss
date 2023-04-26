@@ -1,0 +1,24 @@
+.rgm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.web {
+  font-style: normal;
+  font-weight: 400;
+  font-family: var(--font-rubik);
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.robert {
+  color: rgba(129, 227, 255, 1);
+}
+
+.by {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
