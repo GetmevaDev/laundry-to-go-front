@@ -1,0 +1,37 @@
+.image_text {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.image_text_reverse {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 50px;
+
+  margin-bottom: 100px;
+}
+
+.description {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* or 130% */
+  font-family: var(--font-rubik);
+
+  letter-spacing: -0.2px;
+
+  color: #3f3f3f;
+}
+
+.info {
+}
+
+.image {
+  img {
+    border-radius: 30px;
+  }
+}

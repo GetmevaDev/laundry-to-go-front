@@ -1,0 +1,40 @@
+.image_banner_text {
+  position: relative;
+  margin-bottom: 100px;
+}
+.image_inner {
+  position: relative;
+}
+
+.image {
+  border-radius: 30px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 100%;
+  height: 272px;
+}
+
+.content {
+  position: absolute;
+  padding: 60px 0 60px 60px;
+  top: 50%;
+
+  transform: translate(0, -50%);
+  font-family: var(--font-rubik);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 58px;
+  text-transform: uppercase;
+  max-width: 800px;
+  color: #000000;
+}
+
+.description {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: #3f3f3f;
+}

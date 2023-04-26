@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Layout } from "@/components/layout";
-import { Source } from "@/components/ui";
+import { Benefits, ImageBannerText, Source } from "@/components/ui";
 
 export const SelfServiceScreen = ({
   titleBanner,
@@ -21,5 +21,17 @@ export const SelfServiceScreen = ({
     page="center"
   >
     <Source sub="Self Service" />
+
+    <ImageBannerText
+      image="/images/wash.jpg"
+      title="Modern, High-Capacity Equipment"
+      description="Efficient Washing and Drying Solutions"
+    />
+    <ImageBannerText
+      image="/images/wash.jpg"
+      title="Are Expandable Clothes Actually Filthy? Play SuperWash now!"
+    />
+
+    <Benefits />
   </Layout>
 );

@@ -1,0 +1,32 @@
+.description {
+  padding: 50px;
+  margin-bottom: 85px;
+}
+
+.gray {
+  font-family: var(--font-rubik);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #3f3f3f;
+  letter-spacing: -0.2px;
+  background: #fafafa;
+  border-radius: 30px;
+}
+
+.content {
+  padding-top: 10px;
+}
+
+.blue {
+  background: #0d39b9;
+  border-radius: 50px;
+  font-family: var(--font-rubik);
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #ffffff;
+}
