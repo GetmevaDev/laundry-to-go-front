@@ -1,0 +1,37 @@
+@import "../../../styles/variables.scss";
+
+.source {
+  display: flex;
+
+  padding: 10px 30px 62px 30px;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: var(--font-rubik);
+
+  color: #0d39b9;
+}
+
+.path {
+  font-family: var(--font-rubik);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .source {
+    padding: 10px 30px 30px 30px;
+  }
+}

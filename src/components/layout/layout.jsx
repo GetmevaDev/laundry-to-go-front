@@ -13,19 +13,30 @@ const sizes = {
   layout: styles.layout,
   nolayout: styles.nolayout,
 };
-export const Layout = ({ children, title, description, size = "layout" }) => (
+export const Layout = ({
+  children,
+  title,
+  description,
+  size = "layout",
+  titleBanner,
+  descriptionBanner,
+  image,
+  buttonLeft,
+  buttonRight,
+  page,
+}) => (
   <Meta title={title} description={description}>
     <header className={styles.layout}>
       <Header />
     </header>
 
     <Banner
-      image="/images/homebanner.jpg"
-      title="Welcome to  Laundry To Go"
-      description="Experience Exceptional Laundry Services in Manhattan"
-      button_left="Schedule a Pickup"
-      button_right="Click to call"
-      home
+      image={image}
+      title={titleBanner}
+      description={descriptionBanner}
+      buttonLeft={buttonLeft}
+      buttonRight={buttonRight}
+      page={page}
     />
     <main className={classNames(styles.layout, sizes[size])}>{children}</main>
 

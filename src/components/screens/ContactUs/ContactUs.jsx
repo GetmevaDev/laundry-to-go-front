@@ -3,7 +3,7 @@ import React from "react";
 import { Layout } from "@/components/layout";
 import { Source } from "@/components/ui";
 
-export const SelfServiceScreen = ({
+export const ContactUsScreen = ({
   titleBanner,
   descriptionBanner,
   image,
@@ -11,7 +11,7 @@ export const SelfServiceScreen = ({
   buttonRight,
 }) => (
   <Layout
-    title="Self Service"
+    title="Contact us"
     description="description"
     image={image}
     titleBanner={titleBanner}
@@ -20,6 +20,6 @@ export const SelfServiceScreen = ({
     descriptionBanner={descriptionBanner}
     page="center"
   >
-    <Source sub="Self Service" />
+    <Source sub="Contact us" />
   </Layout>
 );

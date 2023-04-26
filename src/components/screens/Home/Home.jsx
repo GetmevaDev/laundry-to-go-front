@@ -1,10 +1,26 @@
 import React from "react";
 
 import { Layout } from "@/components/layout";
-import { Choose, Competitive, HomeBanner, Map, VisitUs } from "@/components/ui";
+import { Banner, Choose, Competitive, Map, VisitUs } from "@/components/ui";
 
-export const HomeScreen = () => (
-  <Layout title="Home" description="description" size="nolayout">
+export const HomeScreen = ({
+  titleBanner,
+  descriptionBanner,
+  image,
+  buttonLeft,
+  buttonRight,
+}) => (
+  <Layout
+    title="Home"
+    description="description"
+    size="nolayout"
+    page="right"
+    image={image}
+    titleBanner={titleBanner}
+    buttonLeft={buttonLeft}
+    buttonRight={buttonRight}
+    descriptionBanner={descriptionBanner}
+  >
     <VisitUs />
     <Choose />
 

@@ -11,13 +11,13 @@ export const Banner = ({
   image,
   title,
   description,
-  button_left,
-  button_right,
+  buttonLeft,
+  buttonRight,
   leftLink,
   rightLink,
-  home,
+  page,
 }) => (
-  <section className={styles.banner}>
+  <section className={page === "right" ? styles.banner : styles.banner_page}>
     <Image
       width={1920}
       height={600}
@@ -26,9 +26,9 @@ export const Banner = ({
       className={styles.image}
       alt={alt}
     />
-    <div className={home ? styles.home : styles.page}>
+    <div className={page === "right" ? styles.home : styles.page}>
       <Typography
-        className={home ? styles.home_title : styles.title}
+        className={page === "right" ? styles.home_title : styles.title}
         color="white"
         size="large"
       >
@@ -37,10 +37,10 @@ export const Banner = ({
       <p className={styles.description}>{description}</p>
       <div className={styles.buttons}>
         <Link href="/">
-          <Button color="dark"> Schedule a Pickup</Button>
+          <Button color="dark">{buttonLeft}</Button>
         </Link>
         <a href="tel:123">
-          <Button color="blue">Click to call</Button>
+          <Button color="blue">{buttonRight}</Button>
         </a>
       </div>
     </div>
