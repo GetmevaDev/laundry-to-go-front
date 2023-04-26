@@ -13,15 +13,13 @@ const colors = {
 export const Description = ({ color, className, content, title }) => (
   <div className={classNames(styles.description, className, colors[color])}>
     {title && (
-      <Typography
-        tag="h2"
-        size="small"
-        color={colors[color] === "blue" && "white"}
-      >
+      <Typography tag="h2" size="small">
         {title}
       </Typography>
     )}
 
-    <div className={styles.content}>{content}</div>
+    <div className={color === "gray" ? styles.content_gray : styles.content}>
+      {content}
+    </div>
   </div>
 );

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Layout } from "@/components/layout";
-import { Source } from "@/components/ui";
+import { Contact, ContactInfo, Source } from "@/components/ui";
 
 export const ContactUsScreen = ({
   titleBanner,
@@ -21,5 +21,7 @@ export const ContactUsScreen = ({
     page="center"
   >
     <Source sub="Contact us" />
+
+    <ContactInfo />
   </Layout>
 );

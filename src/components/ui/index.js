@@ -6,6 +6,7 @@ export * from "./Button/Button";
 export * from "./Choose/Choose";
 export * from "./Competitive/Competitive";
 export * from "./Contact/Contact";
+export * from "./ContactInfo/ContactInfo";
 export * from "./Description/Description";
 export * from "./Ideal/Ideal";
 export * from "./ImageBannerText/ImageBannerText";
