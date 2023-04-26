@@ -7,13 +7,17 @@ import styles from "./Description.module.scss";
 
 const colors = {
   gray: styles.gray,
-  blue: styles.blue,
+  dark: styles.dark,
 };
 
 export const Description = ({ color, className, content, title }) => (
   <div className={classNames(styles.description, className, colors[color])}>
     {title && (
-      <Typography tag="h2" size="small">
+      <Typography
+        tag="h2"
+        size="small"
+        color={colors[color] === "blue" && "white"}
+      >
         {title}
       </Typography>
     )}

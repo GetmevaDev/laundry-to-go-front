@@ -5,7 +5,15 @@ import { Typography } from "..";
 
 import styles from "./ImageText.module.scss";
 
-export const ImageText = ({ title, description, image, alt, reverse }) => (
+export const ImageText = ({
+  title,
+  description,
+  image,
+  alt,
+  reverse,
+  width,
+  height,
+}) => (
   <div className={reverse ? styles.image_text : styles.image_text_reverse}>
     <div className={styles.info}>
       <Typography size="small" place="left">
@@ -16,7 +24,7 @@ export const ImageText = ({ title, description, image, alt, reverse }) => (
     </div>
 
     <div className={styles.image}>
-      <Image width={640} height={426} alt={alt} src={image} />
+      <Image width={width} height={height} alt={alt} src={image} />
     </div>
   </div>
 );

@@ -1,0 +1,27 @@
+.ideal {
+  margin-bottom: 100px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  /* identical to box height, or 127% */
+  font-family: var(--font-rubik);
+  text-align: center;
+  padding-bottom: 50px;
+  color: #1a1a1a;
+}
+
+.ideal_inner {
+  display: flex;
+  align-items: center;
+}

@@ -40,7 +40,7 @@ export const Banner = ({
           <Button color="dark">{buttonLeft}</Button>
         </Link>
         <a href="tel:123">
-          <Button color="blue">{buttonRight}</Button>
+          <Button color="dark">{buttonRight}</Button>
         </a>
       </div>
     </div>

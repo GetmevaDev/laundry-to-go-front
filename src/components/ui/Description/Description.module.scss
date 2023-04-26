@@ -17,9 +17,16 @@
 
 .content {
   padding-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #ffffff;
 }
 
-.blue {
+.dark {
   background: #0d39b9;
   border-radius: 50px;
   font-family: var(--font-rubik);
@@ -28,5 +35,16 @@
   line-height: 30px;
   text-align: center;
 
+  color: #ffffff;
+}
+
+.blue {
+  background: #5ab1ff;
+  border-radius: 30px;
+  font-family: var(--font-rubik);
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
   color: #ffffff;
 }

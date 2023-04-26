@@ -36,6 +36,8 @@ export const AboutScreen = ({
     />
 
     <ImageText
+      width={600}
+      height={400}
       reverse
       image="/images/quality.jpg"
       title="Quality at the Core of Our Service"
@@ -43,12 +45,16 @@ export const AboutScreen = ({
     />
 
     <ImageText
+      width={600}
+      height={400}
       image="/images/quality.jpg"
       title="Premium Detergents for Exceptional Results"
       description="At Laundry To Go, we believe that quality should never be compromised. That's why we've invested in the latest laundry technology and equipment, ensuring that your garments receive the best care possible. Our machines are meticulously maintained and regularly serviced, guaranteeing that they operate at peak performance to deliver outstanding results."
     />
 
     <ImageText
+      width={600}
+      height={400}
       reverse
       image="/images/quality.jpg"
       title="Our Professional and Passionate Team"
@@ -56,6 +62,8 @@ export const AboutScreen = ({
     />
 
     <ImageText
+      width={600}
+      height={400}
       image="/images/quality.jpg"
       title="A Wide Range of Services Tailored to Your Needs"
       description="At Laundry To Go, we believe that quality should never be compromised. That's why we've invested in the latest laundry technology and equipment, ensuring that your garments receive the best care possible. Our machines are meticulously maintained and regularly serviced, guaranteeing that they operate at peak performance to deliver outstanding results."
