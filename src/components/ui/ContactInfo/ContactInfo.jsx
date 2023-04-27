@@ -38,7 +38,7 @@ export const ContactInfo = () => (
         width="100%"
         height="300"
         style={{ border: 0, borderRadius: "50px" }}
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />

@@ -13,7 +13,7 @@ export const Map = () => (
         width="100%"
         height="450"
         style={{ border: 0, borderRadius: "50px" }}
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />
