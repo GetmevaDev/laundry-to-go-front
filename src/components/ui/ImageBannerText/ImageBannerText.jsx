@@ -6,10 +6,14 @@ import styles from "./ImageBannerText.module.scss";
 export const ImageBannerText = ({ title, description, image, alt }) => (
   <div className={styles.image_banner_text}>
     <div className={styles.image_inner}>
-      <div
+      <Image
+        width={1170}
+        height={272}
+        src={image}
         className={styles.image}
         style={{
-          background: `linear-gradient(270deg, rgba(255, 255, 255, 0.68) 0%,rgba(255, 255, 255, 0) 100%), url(${image});`,
+          background:
+            "linear-gradient(270deg, rgba(255, 255, 255, 0.68) 0%,rgba(255, 255, 255, 0) 100%)",
         }}
       />
     </div>
