@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import { HomeScreen } from "@/components/screens";
 
 export default function Home() {
