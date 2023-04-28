@@ -3,9 +3,9 @@ import React from "react";
 
 import styles from "./Contact.module.scss";
 
-export const Contact = () => (
+export const Contact = ({ contact }) => (
   <div className={styles.contact_us}>
-    <h3 className={styles.title}>Contact Us</h3>
+    <h3 className={styles.title}>{contact?.title}</h3>
     <ul className={styles.list}>
       <li className={styles.item}>
         <Image width={30} height={30} src="/svg/gps.svg" />

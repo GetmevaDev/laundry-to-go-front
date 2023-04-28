@@ -3,14 +3,19 @@ import React from "react";
 
 import styles from "./VisitUsItem.module.scss";
 
-export const VisitUsItem = ({ title, description, icon }) => (
+export const VisitUsItem = ({ title, description, image, alt }) => (
   <div className={styles.visit_item}>
-    <Image width={80} height={80} src="/svg/gps.svg" />
+    <Image
+      width={80}
+      height={80}
+      src={image?.data?.attributes?.url}
+      alt={alt}
+    />
 
-    <h3 className={styles.title}>Address</h3>
+    <h3 className={styles.title}>{title}</h3>
 
     <div className={styles.border} />
 
-    <div className={styles.description}>196 Mott St., New York, NY 10012</div>
+    <div className={styles.description}>{description}</div>
   </div>
 );

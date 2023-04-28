@@ -6,17 +6,15 @@ import { IdealItem } from "./Item/IdealItem";
 
 import styles from "./Ideal.module.scss";
 
-export const Ideal = () => (
+export const Ideal = ({ ideal }) => (
   <div className={styles.ideal}>
     <div className={styles.content}>
-      <Typography>Ideal</Typography>
-      <div className={styles.description}>
-        Each includes a cleanse, rinse, ultimate rinse, and extraction.
-      </div>
+      <Typography>{ideal?.title}</Typography>
+      <div className={styles.description}>{ideal?.description}</div>
     </div>
 
     <div className={styles.ideal_inner}>
-      <IdealItem />
+      <IdealItem cards={ideal?.card} />
     </div>
   </div>
 );

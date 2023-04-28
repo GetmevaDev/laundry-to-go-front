@@ -1,14 +1,35 @@
 import React from "react";
 
 import { ContactUsScreen } from "@/components/screens";
+import { fetchAPI } from "@/components/utils";
 
-export default function ContactUsPage() {
+export async function getStaticProps() {
+  const {
+    data: { attributes },
+  } = await fetchAPI("contact-us-page?populate=deep");
+
+  if (!attributes) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      attributes,
+    },
+    revalidate: 60, // In seconds
+  };
+}
+
+export default function ContactUsPage({ attributes }) {
   return (
     <ContactUsScreen
-      image="/images/contactusbanner.jpg"
-      titleBanner="Contact us"
-      buttonLeft="Schedule a Pickup"
-      buttonRight="Click to call"
+      attributes={attributes}
+      image={attributes?.banner?.image?.data?.attributes?.url}
+      titleBanner={attributes?.banner?.title}
+      buttonLeft={attributes?.banner?.buttons_links?.button_left_text}
+      buttonRight={attributes?.banner?.buttons_links?.button_right_text}
     />
   );
 }

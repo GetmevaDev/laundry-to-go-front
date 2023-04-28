@@ -1,5 +1,8 @@
 .items {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-self: center;
+  justify-items: center;
   gap: 10px;
 }
 
@@ -17,7 +20,6 @@
   font-family: var(--font-rubik);
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 
   &:before {
@@ -38,7 +40,7 @@
 }
 
 .text {
-  padding: 55px 44px 0 44px;
+  padding-top: 50px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -48,7 +50,7 @@
 }
 
 .description {
-  padding: 10px 22px 50px 22px;
+  padding: 10px 19px 50px 27px;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;

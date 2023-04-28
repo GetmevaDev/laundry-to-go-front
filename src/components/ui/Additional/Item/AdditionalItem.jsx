@@ -3,55 +3,20 @@ import React from "react";
 
 import styles from "./AdditionalItem.module.scss";
 
-export const AdditionalItem = ({ alt }) => (
+export const AdditionalItem = ({ cards }) => (
   <ul className={styles.items}>
-    <li className={styles.item}>
-      <div className={styles.item_inner}>
-        <Image width={43} height={43} src="/svg/addio.svg" alt={alt} />
-      </div>
-      <div className={styles.text}>Prewash</div>
-    </li>
-
-    <li className={styles.item}>
-      <div className={styles.item_inner}>
-        <Image width={43} height={43} src="/svg/addio.svg" alt={alt} />
-      </div>
-      <div className={styles.text}>Prewash</div>
-    </li>
-
-    <li className={styles.item}>
-      <div className={styles.item_inner}>
-        <Image width={43} height={43} src="/svg/addio.svg" alt={alt} />
-      </div>
-      <div className={styles.text}>Prewash</div>
-    </li>
-
-    <li className={styles.item}>
-      <div className={styles.item_inner}>
-        <Image width={43} height={43} src="/svg/addio.svg" alt={alt} />
-      </div>
-      <div className={styles.text}>Prewash</div>
-    </li>
-
-    <li className={styles.item}>
-      <div className={styles.item_inner}>
-        <Image width={43} height={43} src="/svg/addio.svg" alt={alt} />
-      </div>
-      <div className={styles.text}>Prewash</div>
-    </li>
-
-    <li className={styles.item}>
-      <div className={styles.item_inner}>
-        <Image width={43} height={43} src="/svg/addio.svg" alt={alt} />
-      </div>
-      <div className={styles.text}>Prewash</div>
-    </li>
-
-    <li className={styles.item}>
-      <div className={styles.item_inner}>
-        <Image width={43} height={43} src="/svg/addio.svg" alt={alt} />
-      </div>
-      <div className={styles.text}>Prewash</div>
-    </li>
+    {cards?.map((card) => (
+      <li className={styles.item} key={card.id}>
+        <div className={styles.item_inner}>
+          <Image
+            width={43}
+            height={43}
+            src={card.svg?.data?.attributes?.url}
+            alt={card.alt}
+          />
+        </div>
+        <div className={styles.text}>{card.text}</div>
+      </li>
+    ))}
   </ul>
 );

@@ -9,6 +9,7 @@ export const HomeScreen = ({
   image,
   buttonLeft,
   buttonRight,
+  attributes,
 }) => (
   <Layout
     title="Home"
@@ -21,10 +22,10 @@ export const HomeScreen = ({
     buttonRight={buttonRight}
     descriptionBanner={descriptionBanner}
   >
-    <VisitUs />
-    <Choose />
+    <VisitUs visit={attributes?.Visit} />
+    <Choose choose={attributes?.Choose} />
 
-    <Competitive />
-    <Map />
+    <Competitive competitive={attributes?.competitive} />
+    <Map contact={attributes?.contact_us} />
   </Layout>
 );

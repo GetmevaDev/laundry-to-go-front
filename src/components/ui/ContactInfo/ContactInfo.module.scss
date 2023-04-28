@@ -21,17 +21,24 @@
 .left_phone {
   font-size: 21px;
   line-height: 26px;
+  font-weight: 400;
 }
 
 .right_phone {
   font-size: 28px;
   line-height: 26px;
+  font-weight: 700;
 }
 
-.time,
 .hours {
   font-size: 28px;
   font-weight: 400;
+  line-height: 33px;
+}
+
+.time {
+  font-size: 28px;
+  font-weight: 700;
   line-height: 33px;
 }
 

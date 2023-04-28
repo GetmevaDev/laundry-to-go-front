@@ -9,6 +9,7 @@ export const ContactUsScreen = ({
   image,
   buttonLeft,
   buttonRight,
+  attributes,
 }) => (
   <Layout
     title="Contact us"
@@ -20,8 +21,10 @@ export const ContactUsScreen = ({
     descriptionBanner={descriptionBanner}
     page="center"
   >
+    {console.log(attributes, "attributes")}
+
     <Source sub="Contact us" />
 
-    <ContactInfo />
+    <ContactInfo contact={attributes?.contact_time} />
   </Layout>
 );

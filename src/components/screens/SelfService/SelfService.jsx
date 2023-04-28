@@ -16,6 +16,7 @@ export const SelfServiceScreen = ({
   image,
   buttonLeft,
   buttonRight,
+  attributes,
 }) => (
   <Layout
     title="Self Service"
@@ -30,28 +31,32 @@ export const SelfServiceScreen = ({
     <Source sub="Self Service" />
 
     <ImageBannerText
-      image="/images/wash.jpg"
-      title="Modern, High-Capacity Equipment"
-      description="Efficient Washing and Drying Solutions"
+      image={attributes?.image_banner_text?.image?.data?.attributes?.url}
+      title={attributes?.image_banner_text?.title}
+      description={attributes?.image_banner_text?.description}
+      alt={attributes?.image_banner_text?.alt}
     />
 
-    <Ideal />
+    <Ideal ideal={attributes?.cards} />
+
+    {console.log(attributes, "attr")}
 
     <ImageText
-      title="High Extract"
-      description="Our dryers take out more water from your clothes than those at the majority of other laundromats in New York. Instead of being soaked, clothing emerges damp, which cuts drying time by up to 25%."
-      reverse
+      title={attributes?.block_item?.title}
+      description={attributes?.block_item?.description}
+      reverse={attributes?.block_item?.reverse}
       width={600}
       height={300}
-      image="/images/extract.jpg"
+      image={attributes?.block_item?.image?.data?.attributes?.url}
     />
-    <Additional />
+    <Additional additional={attributes?.cards_additional} />
 
     <ImageBannerText
-      image="/images/wash.jpg"
-      title="Are Expandable Clothes Actually Filthy? Play SuperWash now!"
+      image={attributes?.image_banner_text_play?.image?.data?.attributes?.url}
+      alt={attributes?.image_banner_text_play?.alt}
+      title={attributes?.image_banner_text_play?.title}
     />
 
-    <Benefits />
+    <Benefits benefits={attributes?.benefits} />
   </Layout>
 );

@@ -3,29 +3,18 @@ import React from "react";
 
 import styles from "./IdealItem.module.scss";
 
-export const IdealItem = ({ alt }) => (
+export const IdealItem = ({ cards }) => (
   <ul className={styles.items}>
-    <li className={styles.item}>
-      <Image width={70} height={70} src="/svg/machine1.svg" alt={alt} />
-      <div className={styles.text}>Wash</div>
-    </li>
-
-    <li className={styles.item}>
-      <Image width={70} height={70} src="/svg/machine1.svg" alt={alt} />
-
-      <div className={styles.text}>Rinse</div>
-    </li>
-
-    <li className={styles.item}>
-      <Image width={70} height={70} src="/svg/machine1.svg" alt={alt} />
-
-      <div className={styles.text}>Final Rinse</div>
-    </li>
-
-    <li className={styles.item}>
-      <Image width={70} height={70} src="/svg/machine1.svg" alt={alt} />
-
-      <div className={styles.text}>Extract</div>
-    </li>
+    {cards?.map((card) => (
+      <li className={styles.item} key={card.id}>
+        <Image
+          width={70}
+          height={70}
+          src={card?.svg?.data?.attributes?.url}
+          alt={card.alt}
+        />
+        <div className={styles.text}>{card.text}</div>
+      </li>
+    ))}
   </ul>
 );

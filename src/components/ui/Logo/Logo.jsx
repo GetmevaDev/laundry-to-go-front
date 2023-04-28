@@ -11,6 +11,7 @@ export const Logo = ({ className }) => (
       src="/svg/logo.svg"
       width={188}
       height={191}
+      loading="lazy"
       alt=""
       className={classNames(styles.image, className)}
     />

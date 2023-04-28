@@ -24,7 +24,13 @@ export const ImageText = ({
     </div>
 
     <div className={styles.image}>
-      <Image width={width} height={height} alt={alt} src={image} />
+      <Image
+        width={width}
+        height={height}
+        alt={alt}
+        src={image}
+        loading="lazy"
+      />
     </div>
   </div>
 );

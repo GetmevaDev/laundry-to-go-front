@@ -6,14 +6,14 @@ import { BenefitItem } from "./Item/BenefitItem";
 
 import styles from "./Benefits.module.scss";
 
-export const Benefits = () => (
+export const Benefits = ({ benefits }) => (
   <div className={styles.benefits}>
-    <Typography>Benefits of Our Dryers</Typography>
+    <Typography>{benefits?.title}</Typography>
 
     <div className={styles.benefits_inner}>
-      <BenefitItem />
-      <BenefitItem />
-      <BenefitItem />
+      {benefits?.benefit_item?.map((benefit) => (
+        <BenefitItem key={benefit.id} {...benefit} />
+      ))}
     </div>
   </div>
 );

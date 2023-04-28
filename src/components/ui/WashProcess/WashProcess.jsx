@@ -6,12 +6,12 @@ import { WashProcessItem } from "./Item/WashProcessItem";
 
 import styles from "./WashProcess.module.scss";
 
-export const WashProcess = () => (
+export const WashProcess = ({ cards }) => (
   <div className={styles.wash}>
-    <Typography>The Wash and Fold Process at Laundry To Go</Typography>
+    <Typography>{cards?.title}</Typography>
 
     <div className={styles.cards}>
-      <WashProcessItem />
+      <WashProcessItem cards={cards?.card} />
     </div>
   </div>
 );

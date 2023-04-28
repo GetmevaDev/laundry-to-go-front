@@ -23,8 +23,9 @@ export const Banner = ({
       height={600}
       style={{ width: "100%" }}
       src={image}
+      loading="lazy"
       className={styles.image}
-      alt={alt}
+      alt="banner"
     />
     <div className={page === "right" ? styles.home : styles.page}>
       <Typography

@@ -6,15 +6,15 @@ import { VisitUsItem } from "./Item/VisitUsItem";
 
 import styles from "./VisitUs.module.scss";
 
-export const VisitUs = () => (
+export const VisitUs = ({ visit }) => (
   <div className={styles.visit_us}>
     <Typography tag="h2" color="black" size="medium" className={styles.title}>
-      Visit is Today
+      {visit?.title}
     </Typography>
     <div className={styles.visit}>
-      <VisitUsItem />
-      <VisitUsItem />
-      <VisitUsItem />
+      {visit?.visit_item?.map((item) => (
+        <VisitUsItem key={item.id} {...item} />
+      ))}
     </div>
   </div>
 );

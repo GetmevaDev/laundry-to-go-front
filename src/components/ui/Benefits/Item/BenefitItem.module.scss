@@ -11,23 +11,17 @@
   flex-direction: column;
   align-items: center;
   font-family: var(--font-rubik);
-  gap: 15px;
   padding: 20px 0 15px;
-
   background: #ffffff;
   border: 1px solid #dbdbdb;
   border-radius: 30px;
 }
 
 .title {
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 58px;
-  /* identical to box height, or 193% */
-
-  text-transform: uppercase;
-
+  text-align: center;
   color: #000000;
 }
 
@@ -35,7 +29,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  /* or 130% */
   padding: 0 26px;
   text-align: center;
   letter-spacing: -0.2px;

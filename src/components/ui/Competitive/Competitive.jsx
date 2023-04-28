@@ -5,26 +5,28 @@ import { Button, Typography } from "..";
 
 import styles from "./Competitive.module.scss";
 
-export const Competitive = () => (
+export const Competitive = ({ competitive }) => (
   <div className={styles.competititve}>
     <div className={styles.competititve_inner}>
       <div className={styles.info}>
         <Typography place="left" className={styles.title}>
-          Competitive Pricing
+          {competitive?.title}
         </Typography>
 
-        <div className={styles.description}>
-          At Laundry To Go in Manhattan, NYC, we believe that top-notch laundry
-          services should be affordable. Our competitive pricing ensures that
-          you receive exceptional service without breaking the bank.
-        </div>
+        <div className={styles.description}>{competitive?.description}</div>
 
         <Button color="dark" className={styles.button}>
-          See Our Pricing
+          {competitive?.button_text}
         </Button>
       </div>
       <div className={styles.image}>
-        <Image width={380} height={571} src="/images/comp.jpg" />
+        <Image
+          width={380}
+          height={571}
+          src={competitive?.image?.data?.attributes?.url}
+          loading="lazy"
+          alt={competitive?.alt}
+        />
       </div>
     </div>
   </div>

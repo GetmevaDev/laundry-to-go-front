@@ -9,6 +9,7 @@ export const ImageBannerText = ({ title, description, image, alt }) => (
       <Image
         width={1170}
         height={272}
+        alt={alt}
         src={image}
         className={styles.image}
         style={{
