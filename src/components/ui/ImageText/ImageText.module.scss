@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .image_text {
   display: flex;
   align-items: center;
@@ -10,7 +12,6 @@
   align-items: center;
   flex-direction: row-reverse;
   gap: 50px;
-
   margin-bottom: 100px;
 }
 
@@ -33,5 +34,26 @@
 .image {
   img {
     border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .info {
+    padding: 0 10px;
+  }
+
+  .image_text,
+  .image_text_reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: $smTableWidth) {
+  .image_text,
+  .image_text_reverse {
+    margin-bottom: 50px;
   }
 }

@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .typography {
   font-weight: 700;
   text-align: center;
@@ -37,4 +39,21 @@
 
 .left {
   text-align: left;
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .small {
+    font-size: 30px;
+    line-height: 48px;
+  }
+
+  .medium {
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .large {
+    font-size: 50px;
+    line-height: 70px;
+  }
 }

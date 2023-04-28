@@ -1,9 +1,17 @@
+@import "../../../styles/variables.scss";
+
 .benefits_inner {
   margin-top: 50px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 23px;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .benefits_inner {
+    grid-template-columns: auto;
+    padding: 0 10px;
+  }
 }

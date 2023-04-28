@@ -11,6 +11,7 @@ export const Map = ({ contact }) => (
         title="map"
         src={contact?.href_map}
         width="100%"
+        className={styles.map_frame}
         height="450"
         style={{ border: 0, borderRadius: "50px" }}
         allowFullScreen=""

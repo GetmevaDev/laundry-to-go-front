@@ -84,4 +84,30 @@
 }
 
 @media screen and (max-width: $phoneWidth) {
+  .home_title {
+    font-size: 30px !important;
+  }
+
+  .title {
+    white-space: pre-wrap;
+  }
+
+  .page {
+    top: 55%;
+  }
+
+  .home {
+    left: 50%;
+    right: -50%;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

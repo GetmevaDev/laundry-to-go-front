@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .contact_us {
   background: #ffffff;
   border: 1px solid #dbdbdb;
@@ -46,4 +48,15 @@
 .hour {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: $smTableWidth) {
+  .map_frame {
+    height: 100%;
+    border-radius: 0% !important;
+  }
+
+  .contact_us {
+    position: inherit;
+  }
 }

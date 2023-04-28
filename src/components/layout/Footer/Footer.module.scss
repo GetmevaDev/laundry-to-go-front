@@ -97,6 +97,18 @@
     }
   }
 }
+@media screen and (max-width: $tableWidth) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item + .item {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: $phoneWidth) {
   .footer {
     .logo {
@@ -112,5 +124,11 @@
     li + li {
       padding-left: 0 !important;
     }
+  }
+
+  .footer_bottom_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

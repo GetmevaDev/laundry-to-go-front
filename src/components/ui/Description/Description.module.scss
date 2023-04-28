@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .description {
   padding: 50px;
   margin-bottom: 85px;
@@ -58,4 +60,17 @@
   line-height: 30px;
   text-align: center;
   color: #ffffff;
+}
+
+@media screen and (max-width: $smTableWidth) {
+  .content {
+    font-size: 16px;
+  }
+  .description {
+    padding: 20px;
+  }
+
+  .content_gray {
+    font-size: 16px;
+  }
 }

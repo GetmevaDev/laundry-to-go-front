@@ -6,8 +6,8 @@
 }
 
 .visit {
-  display: flex;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 100px;
   gap: 23px;
 }

@@ -9,7 +9,7 @@ import styles from "./VisitUs.module.scss";
 export const VisitUs = ({ visit }) => (
   <div className={styles.visit_us}>
     <Typography tag="h2" color="black" size="medium" className={styles.title}>
-      {visit?.title}
+      {visit?.Title}
     </Typography>
     <div className={styles.visit}>
       {visit?.visit_item?.map((item) => (
