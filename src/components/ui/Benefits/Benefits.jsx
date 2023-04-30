@@ -8,7 +8,7 @@ import styles from "./Benefits.module.scss";
 
 export const Benefits = ({ benefits }) => (
   <div className={styles.benefits}>
-    <Typography>{benefits?.title}</Typography>
+    <Typography tag="h2">{benefits?.title}</Typography>
 
     <div className={styles.benefits_inner}>
       {benefits?.benefit_item?.map((benefit) => (

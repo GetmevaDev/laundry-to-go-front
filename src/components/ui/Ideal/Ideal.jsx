@@ -9,7 +9,7 @@ import styles from "./Ideal.module.scss";
 export const Ideal = ({ ideal }) => (
   <div className={styles.ideal}>
     <div className={styles.content}>
-      <Typography>{ideal?.title}</Typography>
+      <Typography tag="h2">{ideal?.title}</Typography>
       <div className={styles.description}>{ideal?.description}</div>
     </div>
 

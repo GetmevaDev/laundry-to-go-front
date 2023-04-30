@@ -5,34 +5,50 @@ import styles from "./Contact.module.scss";
 
 export const Contact = ({ contact }) => (
   <div className={styles.contact_us}>
-    <h3 className={styles.title}>{contact?.title}</h3>
+    <h2 className={styles.title}>{contact?.title}</h2>
     <ul className={styles.list}>
       <li className={styles.item}>
-        <Image width={30} height={30} src="/svg/gps.svg" />
+        <Image
+          width={30}
+          height={30}
+          src={contact?.contact_address?.image?.data?.attributes?.url}
+          alt={contact?.contact_address?.alt}
+        />
         <div className={styles.description}>
-          196 Mott St., New York, NY 10012
+          {contact?.contact_address?.text}
         </div>
       </li>
 
       <li className={styles.item}>
-        <Image width={30} height={30} src="/svg/gps.svg" />
-        <div className={styles.description}>(646) 455-0606</div>
+        <Image
+          width={30}
+          height={30}
+          src={contact?.contact_phone_page?.image?.data?.attributes?.url}
+          alt={contact?.contact_phone_page?.alt}
+        />
+        <div className={styles.description}>
+          {contact?.contact_phone_page?.left_phone}
+        </div>
+        <div> {contact?.contact_phone_page?.right_phone}</div>
       </li>
 
+      {console.log(contact, "contact")}
       <li className={styles.item}>
-        <Image width={30} height={30} src="/svg/gps.svg" />
+        <Image
+          width={30}
+          height={30}
+          src={contact?.contact_date_page?.image?.data?.attributes?.url}
+          alt={contact?.contact_date_page?.alt}
+        />
         <div className={styles.description_hours}>
-          <div className={styles.hours}>Store hours:</div>
+          <div className={styles.hours}>{contact?.contact_date_page?.text}</div>
 
           <div className={styles.time}>
             <div className={styles.hour}>
-              <div className={styles.day}>Mon - Sat:</div>
-              <div className={styles.date}>8:00 AM–10:00 PM</div>
+              <div className={styles.day}>
+                {contact?.contact_date_page?.date}
+              </div>
             </div>
-            <div className={styles.hour}>
-              <div className={styles.day}>Mon - Sat:</div>
-              <div className={styles.date}>8:00 AM–10:00 PM</div>
-            </div>{" "}
           </div>
         </div>
       </li>

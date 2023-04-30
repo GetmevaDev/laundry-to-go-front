@@ -10,6 +10,7 @@ export const Logo = ({ className }) => (
     <Image
       src="/svg/logo.svg"
       width={188}
+      aria-label="logo"
       height={191}
       loading="lazy"
       alt=""

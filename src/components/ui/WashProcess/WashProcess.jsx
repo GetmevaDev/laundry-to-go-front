@@ -8,7 +8,7 @@ import styles from "./WashProcess.module.scss";
 
 export const WashProcess = ({ cards }) => (
   <div className={styles.wash}>
-    <Typography>{cards?.title}</Typography>
+    <Typography tag="h2">{cards?.title}</Typography>
 
     <div className={styles.cards}>
       <WashProcessItem cards={cards?.card} />

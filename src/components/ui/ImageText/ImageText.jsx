@@ -16,7 +16,7 @@ export const ImageText = ({
 }) => (
   <div className={reverse ? styles.image_text : styles.image_text_reverse}>
     <div className={styles.info}>
-      <Typography size="small" place="left">
+      <Typography size="small" place="left" tag="h2">
         {title}
       </Typography>
 

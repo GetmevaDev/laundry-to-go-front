@@ -9,7 +9,7 @@ export const Competitive = ({ competitive }) => (
   <div className={styles.competititve}>
     <div className={styles.competititve_inner}>
       <div className={styles.info}>
-        <Typography place="left" className={styles.title}>
+        <Typography place="left" className={styles.title} tag="h2">
           {competitive?.title}
         </Typography>
 
