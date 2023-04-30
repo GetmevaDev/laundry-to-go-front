@@ -1,3 +1,5 @@
+@import "../../../../styles/variables.scss";
+
 .items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -57,4 +59,19 @@
   letter-spacing: -0.2px;
   padding: 20px 25px 50px 25px;
   color: #3f3f3f;
+}
+
+@media screen and (max-width: $tableWidth) {
+  .items {
+    grid-template-columns: auto;
+    gap: 100px;
+  }
+
+  .item {
+    &:before {
+      transform: translate(50%, 50%) rotate(90deg);
+      top: 99%;
+      right: 50%;
+    }
+  }
 }

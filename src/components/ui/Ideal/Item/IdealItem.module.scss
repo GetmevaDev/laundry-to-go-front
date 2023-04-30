@@ -1,3 +1,5 @@
+@import "../../../../styles/variables.scss";
+
 .item {
   background: #5ab1ff;
   padding: 51px;
@@ -46,7 +48,26 @@
 }
 
 .items {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 150px;
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .items {
+    grid-template-columns: auto;
+  }
+
+  .items li::before {
+    content: "";
+    display: inline-block;
+    background-image: url("/svg/arrow-right.svg");
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(90deg);
+    bottom: -50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 41px;
+  }
 }

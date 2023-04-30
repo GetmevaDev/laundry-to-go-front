@@ -83,6 +83,14 @@
   }
 }
 
+@media screen and (max-width: $smDesktopWidth) {
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: $phoneWidth) {
   .home_title {
     font-size: 30px !important;
@@ -103,11 +111,5 @@
 
   .description {
     text-align: center;
-  }
-
-  .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }

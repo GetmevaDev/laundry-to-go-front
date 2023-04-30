@@ -1,3 +1,5 @@
+@import "../../../../styles/variables.scss";
+
 .items {
   margin-top: 50px;
 }
@@ -45,8 +47,31 @@
 }
 
 .items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   gap: 75px;
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .items {
+    grid-template-columns: auto;
+    place-items: center;
+  }
+
+  .items li::before {
+    content: "";
+    display: inline-block;
+    background-image: url("/svg/mini-arrow.svg");
+
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, 85px) rotate(90deg);
+    width: 25px;
+    height: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
 }

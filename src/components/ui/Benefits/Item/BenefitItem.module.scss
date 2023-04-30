@@ -1,3 +1,5 @@
+@import "../../../../styles/variables.scss";
+
 .image_inner {
   border-radius: 30px;
 }
@@ -34,4 +36,15 @@
   letter-spacing: -0.2px;
 
   color: #3f3f3f;
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .image {
+    padding: 0;
+  }
+
+  .image_inner {
+    width: 100%;
+    object-fit: cover;
+  }
 }

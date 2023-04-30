@@ -42,7 +42,15 @@
 }
 
 @media screen and (max-width: $tableWidth) {
-  .button {
+  .blue {
+    width: 150px;
+    padding: 11px 21px;
+  }
+
+  .dark {
+    width: 150px;
+
+    padding: 11px 21px;
   }
 }
 

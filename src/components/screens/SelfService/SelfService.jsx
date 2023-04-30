@@ -39,8 +39,6 @@ export const SelfServiceScreen = ({
 
     <Ideal ideal={attributes?.cards} />
 
-    {console.log(attributes, "attr")}
-
     <ImageText
       title={attributes?.block_item?.title}
       description={attributes?.block_item?.description}
