@@ -1,0 +1,45 @@
+@import "../../../../styles/variables.scss";
+
+.provide_item {
+  border-radius: 30px;
+  padding: 50px 46px;
+  font-family: var(--font-rubik);
+}
+
+.dark {
+  background: #0d39b9;
+}
+
+.blue {
+  background: #5ab1ff;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 47px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.description {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 95px;
+  color: #ffffff;
+  padding-top: 55px;
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .provide_item {
+    padding: 25px 23px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 60px;
+    padding-top: 15px;
+  }
+}

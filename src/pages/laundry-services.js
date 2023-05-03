@@ -1,12 +1,12 @@
 import React from "react";
 
-import { PricingScreen } from "@/components/screens";
+import { LaundryServicesScreen } from "@/components/screens";
 import { fetchAPI } from "@/components/utils";
 
 export async function getStaticProps() {
   const {
     data: { attributes },
-  } = await fetchAPI("pricingg-page?populate=deep");
+  } = await fetchAPI("pricing-page?populate=deep");
 
   if (!attributes) {
     return {
@@ -22,9 +22,9 @@ export async function getStaticProps() {
   };
 }
 
-export default function PricingPage({ attributes }) {
+export default function LaundryServicePage({ attributes }) {
   return (
-    <PricingScreen
+    <LaundryServicesScreen
       attributes={attributes}
       image={attributes?.banner?.image?.data?.attributes?.url}
       titleBanner={attributes?.banner?.title}

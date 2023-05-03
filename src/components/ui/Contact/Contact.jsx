@@ -32,7 +32,6 @@ export const Contact = ({ contact }) => (
         <div> {contact?.contact_phone_page?.right_phone}</div>
       </li>
 
-      {console.log(contact, "contact")}
       <li className={styles.item}>
         <Image
           width={30}

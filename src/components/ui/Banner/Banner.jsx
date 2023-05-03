@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -16,6 +17,7 @@ export const Banner = ({
   leftLink,
   rightLink,
   page,
+  pricing,
 }) => (
   <section className={page === "right" ? styles.banner : styles.banner_page}>
     <Image
@@ -27,21 +29,30 @@ export const Banner = ({
       className={styles.image}
       alt="banner"
     />
+
     <div className={page === "right" ? styles.home : styles.page}>
       <Typography
-        className={page === "right" ? styles.home_title : styles.title}
+        className={classNames(
+          page === "right" ? styles.home_title : styles.title
+        )}
         color="white"
         size="large"
       >
         {title}
       </Typography>
-      <p className={styles.description}>{description}</p>
+      <p
+        className={
+          page === "right" ? styles.home_description : styles.description
+        }
+      >
+        {description}
+      </p>
       <div className={styles.buttons}>
         <Link href="/">
           <Button color="dark">{buttonLeft}</Button>
         </Link>
         <a href="tel:123">
-          <Button color="dark">{buttonRight}</Button>
+          <Button color="blue">{buttonRight}</Button>
         </a>
       </div>
     </div>

@@ -40,7 +40,6 @@
 }
 
 .title {
-  white-space: nowrap;
 }
 
 .page {
@@ -57,13 +56,24 @@
   transform: translate(-50%, -50%);
 }
 
-.description {
+.home_description {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
   font-family: var(--font-rubik);
   text-align: right;
+
+  color: #ffffff;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: var(--font-rubik);
+  text-align: center;
 
   color: #ffffff;
 }
@@ -89,11 +99,19 @@
     align-items: center;
     justify-content: center;
   }
+
+  .title {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: $phoneWidth) {
   .home_title {
     font-size: 30px !important;
+  }
+
+  .home_description {
+    text-align: center;
   }
 
   .title {

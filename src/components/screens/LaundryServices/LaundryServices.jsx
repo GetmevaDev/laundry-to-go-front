@@ -5,12 +5,10 @@ import {
   BlueDescription,
   Description,
   ImageText,
-  Provide,
-  Scheduling,
   Source,
 } from "@/components/ui";
 
-export const PricingScreen = ({
+export const LaundryServicesScreen = ({
   titleBanner,
   descriptionBanner,
   image,
@@ -22,7 +20,6 @@ export const PricingScreen = ({
     title="Pricing"
     description="description"
     image={image}
-    size="nolayout"
     titleBanner={titleBanner}
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
@@ -30,11 +27,6 @@ export const PricingScreen = ({
     page="center"
   >
     <Source sub="Pricing" />
-    <Scheduling scheduling={attributes?.cards} />
-
-    <Provide provide={attributes?.provide} />
-
-    {console.log(attributes, "attr")}
 
     <ImageText
       title={attributes?.block_item?.title}
@@ -43,6 +35,29 @@ export const PricingScreen = ({
       width={600}
       height={300}
       image={attributes?.block_item?.image?.data?.attributes?.url}
+    />
+
+    <BlueDescription
+      content={attributes?.description_banner?.description}
+      title={attributes?.description_banner?.title}
+      color="blue"
+    />
+
+    {attributes?.block?.block_item?.map((item) => (
+      <ImageText
+        key={item.id}
+        width={600}
+        height={400}
+        reverse={item.reverse}
+        image={item.image.data.attributes.url}
+        title={item.title}
+        description={item.description}
+      />
+    ))}
+
+    <Description
+      color={attributes?.description_banner_bottom?.bg_color}
+      content={attributes?.description_banner_bottom?.description}
     />
   </Layout>
 );
