@@ -22,7 +22,7 @@ export const VisitUsItem = ({
       <p className={styles.description}>{description}</p>
     ) : (
       <a href={`tel:${telLeft} ${telRight}`} className={styles.description}>
-        {telLeft} <span> {telRight}</span>
+        <span className={styles.tel}>{telLeft}</span> <span> {telRight}</span>
       </a>
     )}
   </div>

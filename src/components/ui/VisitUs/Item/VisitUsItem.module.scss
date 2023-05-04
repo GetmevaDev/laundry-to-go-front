@@ -47,6 +47,12 @@
   }
 }
 
+.tel {
+  font-size: 30px !important;
+  font-weight: 400 !important;
+  line-height: 35px !important;
+}
+
 @media screen and (max-width: $smDesktopWidth) {
   .visit_item {
     margin: 10px 5px;
