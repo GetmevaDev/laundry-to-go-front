@@ -143,8 +143,7 @@
 }
 
 @media screen and (max-width: $smDesktopWidth) {
-  .buttons,
-  .buttons_page {
+  .buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,6 +154,18 @@
       padding: 11px 20px;
       width: 100%;
     }
+  }
+
+  .buttons_page {
+    display: flex;
+    align-items: center;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .home_description {
+    text-align: center;
   }
 
   .title {
@@ -203,7 +214,8 @@
     text-align: center;
   }
 
-  .buttons {
+  .buttons,
+  .buttons_page {
     position: fixed;
     bottom: 0%;
     left: 50%;
