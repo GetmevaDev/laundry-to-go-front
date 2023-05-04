@@ -78,17 +78,27 @@
   color: #ffffff;
 }
 
-.buttons {
-  margin-top: 40px;
-  gap: 10px;
+.buttons_page {
   position: absolute;
-  bottom: 0%;
+  right: -5%;
+
+  bottom: 25%;
+  z-index: 10;
+
+  transform: translate(-100%, 0%);
+  a + a {
+    margin-left: 10px;
+  }
+}
+
+.buttons {
+  position: absolute;
   left: 50%;
+  bottom: 25%;
   margin: 0 auto;
   z-index: 10;
 
-  transform: translate(-50%, -50%);
-  bottom: 0;
+  transform: translate(-50%, 0%);
   a + a {
     margin-left: 10px;
   }
@@ -100,11 +110,26 @@
   }
 }
 
+@media screen and (max-width: $desktopWidth) {
+  .buttons,
+  .buttons_page {
+    bottom: 20%;
+  }
+}
+
 @media screen and (max-width: $smDesktopWidth) {
-  .buttons {
+  .buttons,
+  .buttons_page {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    bottom: 30%;
+    button {
+      font-size: 14px;
+      padding: 11px 20px;
+      width: 100%;
+    }
   }
 
   .title {
@@ -121,7 +146,7 @@
   }
 }
 
-@media screen and (max-width: $phoneWidth) {
+@media screen and (max-width: $smTableWidth) {
   .home_title {
     font-size: 30px !important;
   }
@@ -167,6 +192,7 @@
       width: 100%;
       border-radius: 0;
       font-size: 12px;
+      padding: 11px 18px;
     }
 
     a + a {

@@ -46,7 +46,7 @@ export const Banner = ({
         {description}
       </p>
     </div>
-    <div className={styles.buttons}>
+    <div className={page === "right" ? styles.buttons_page : styles.buttons}>
       <Link href={buttonLeftLink}>
         <Button color="dark">{buttonLeft}</Button>
       </Link>
