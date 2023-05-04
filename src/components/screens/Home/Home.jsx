@@ -10,6 +10,8 @@ export const HomeScreen = ({
   buttonLeft,
   buttonRight,
   attributes,
+  buttonLeftLink,
+  buttonRightLink,
 }) => (
   <Layout
     title="Home"
@@ -20,6 +22,8 @@ export const HomeScreen = ({
     titleBanner={titleBanner}
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
+    buttonLeftLink={buttonLeftLink}
+    buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
   >
     <VisitUs visit={attributes?.Visit} />

@@ -81,7 +81,14 @@
 .buttons {
   margin-top: 40px;
   gap: 10px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  margin: 0 auto;
+  z-index: 10;
 
+  transform: translate(-50%, -50%);
+  bottom: 0;
   a + a {
     margin-left: 10px;
   }
@@ -105,16 +112,12 @@
   }
 
   .page {
-    top: 55%;
+    top: 45%;
   }
 
   .home {
     left: 50%;
     right: -50%;
-  }
-
-  .home_description {
-    text-align: center;
   }
 }
 
@@ -132,7 +135,7 @@
   }
 
   .page {
-    top: 55%;
+    top: 50%;
   }
 
   .home {
@@ -142,5 +145,32 @@
 
   .description {
     text-align: center;
+  }
+
+  .buttons {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+
+    transform: translate(-50%, 0%);
+
+    a {
+      width: 50%;
+    }
+
+    button {
+      width: 100%;
+      border-radius: 0;
+      font-size: 12px;
+    }
+
+    a + a {
+      margin-left: 0;
+    }
   }
 }

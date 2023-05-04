@@ -17,6 +17,8 @@ export const PricingScreen = ({
   buttonLeft,
   buttonRight,
   attributes,
+  buttonLeftLink,
+  buttonRightLink,
 }) => (
   <Layout
     title="Pricing"
@@ -26,6 +28,8 @@ export const PricingScreen = ({
     titleBanner={titleBanner}
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
+    buttonLeftLink={buttonLeftLink}
+    buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
     page="center"
   >

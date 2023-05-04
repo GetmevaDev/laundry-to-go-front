@@ -10,6 +10,8 @@ export const ContactUsScreen = ({
   buttonLeft,
   buttonRight,
   attributes,
+  buttonLeftLink,
+  buttonRightLink,
 }) => (
   <Layout
     title="Contact us"
@@ -18,6 +20,8 @@ export const ContactUsScreen = ({
     titleBanner={titleBanner}
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
+    buttonLeftLink={buttonLeftLink}
+    buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
     page="center"
   >

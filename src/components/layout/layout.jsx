@@ -24,6 +24,8 @@ export const Layout = ({
   buttonLeft,
   buttonRight,
   page,
+  buttonLeftLink,
+  buttonRightLink,
 }) => (
   <Meta title={title} description={description}>
     <header className={styles.layout}>
@@ -37,6 +39,8 @@ export const Layout = ({
       buttonLeft={buttonLeft}
       buttonRight={buttonRight}
       page={page}
+      buttonLeftLink={buttonLeftLink}
+      buttonRightLink={buttonRightLink}
     />
     <main className={classNames(styles.layout, sizes[size])}>{children}</main>
 

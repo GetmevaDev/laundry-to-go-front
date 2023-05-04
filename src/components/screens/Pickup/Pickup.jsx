@@ -16,6 +16,8 @@ export const PickupScreen = ({
   buttonLeft,
   buttonRight,
   attributes,
+  buttonLeftLink,
+  buttonRightLink,
 }) => (
   <Layout
     title="Pickup & Delivery"
@@ -24,6 +26,8 @@ export const PickupScreen = ({
     titleBanner={titleBanner}
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
+    buttonLeftLink={buttonLeftLink}
+    buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
     page="center"
   >

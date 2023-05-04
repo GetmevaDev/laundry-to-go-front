@@ -14,10 +14,9 @@ export const Banner = ({
   description,
   buttonLeft,
   buttonRight,
-  leftLink,
-  rightLink,
+  buttonRightLink,
+  buttonLeftLink,
   page,
-  pricing,
 }) => (
   <section className={page === "right" ? styles.banner : styles.banner_page}>
     <Image
@@ -29,7 +28,6 @@ export const Banner = ({
       className={styles.image}
       alt="banner"
     />
-
     <div className={page === "right" ? styles.home : styles.page}>
       <Typography
         className={classNames(
@@ -47,14 +45,14 @@ export const Banner = ({
       >
         {description}
       </p>
-      <div className={styles.buttons}>
-        <Link href="/">
-          <Button color="dark">{buttonLeft}</Button>
-        </Link>
-        <a href="tel:123">
-          <Button color="blue">{buttonRight}</Button>
-        </a>
-      </div>
+    </div>
+    <div className={styles.buttons}>
+      <Link href={buttonLeftLink}>
+        <Button color="dark">{buttonLeft}</Button>
+      </Link>
+      <a href={`tel:${buttonRightLink}`}>
+        <Button color="blue">{buttonRight}</Button>
+      </a>
     </div>
   </section>
 );

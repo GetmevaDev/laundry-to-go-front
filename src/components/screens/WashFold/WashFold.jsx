@@ -10,6 +10,8 @@ export const WashFoldScreen = ({
   buttonLeft,
   buttonRight,
   attributes,
+  buttonLeftLink,
+  buttonRightLink,
 }) => (
   <Layout
     title="Wash & Fold"
@@ -19,6 +21,8 @@ export const WashFoldScreen = ({
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
     descriptionBanner={descriptionBanner}
+    buttonLeftLink={buttonLeftLink}
+    buttonRightLink={buttonRightLink}
     page="center"
   >
     <Source sub="Wash and Fold" />

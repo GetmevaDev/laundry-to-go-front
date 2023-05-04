@@ -17,6 +17,8 @@ export const SelfServiceScreen = ({
   buttonLeft,
   buttonRight,
   attributes,
+  buttonLeftLink,
+  buttonRightLink,
 }) => (
   <Layout
     title="Self Service"
@@ -25,6 +27,8 @@ export const SelfServiceScreen = ({
     titleBanner={titleBanner}
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
+    buttonLeftLink={buttonLeftLink}
+    buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
     page="center"
   >

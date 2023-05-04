@@ -15,6 +15,8 @@ export const LaundryServicesScreen = ({
   buttonLeft,
   buttonRight,
   attributes,
+  buttonLeftLink,
+  buttonRightLink,
 }) => (
   <Layout
     title="Pricing"
@@ -22,6 +24,8 @@ export const LaundryServicesScreen = ({
     image={image}
     titleBanner={titleBanner}
     buttonLeft={buttonLeft}
+    buttonLeftLink={buttonLeftLink}
+    buttonRightLink={buttonRightLink}
     buttonRight={buttonRight}
     descriptionBanner={descriptionBanner}
     page="center"

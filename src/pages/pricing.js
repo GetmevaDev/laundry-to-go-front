@@ -31,6 +31,8 @@ export default function PricingPage({ attributes }) {
       descriptionBanner={attributes?.banner?.description}
       buttonLeft={attributes?.banner?.buttons_links?.button_left_text}
       buttonRight={attributes?.banner?.buttons_links?.button_right_text}
+      buttonLeftLink={attributes?.banner?.buttons_links?.button_link_left}
+      buttonRightLink={attributes?.banner?.buttons_links?.button_link_right}
     />
   );
 }
