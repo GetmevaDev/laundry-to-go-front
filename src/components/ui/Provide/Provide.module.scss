@@ -33,3 +33,9 @@
     grid-template-columns: auto;
   }
 }
+
+@media screen and (max-width: $smTableWidth) {
+  .provide {
+    padding-top: 50px;
+  }
+}

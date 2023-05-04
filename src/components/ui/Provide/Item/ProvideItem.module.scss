@@ -43,3 +43,9 @@
     padding-top: 15px;
   }
 }
+
+@media screen and (max-width: $smTableWidth) {
+  .provide_item {
+    border-radius: 0;
+  }
+}

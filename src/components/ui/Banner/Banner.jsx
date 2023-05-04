@@ -19,15 +19,19 @@ export const Banner = ({
   page,
 }) => (
   <section className={page === "right" ? styles.banner : styles.banner_page}>
-    <Image
-      width={1920}
-      height={600}
-      style={{ width: "100%" }}
-      src={image}
-      loading="lazy"
-      className={styles.image}
-      alt="banner"
-    />
+    <div className={styles.image_inner}>
+      <Image
+        width={1920}
+        height={600}
+        alt={alt}
+        src={image}
+        className={styles.image}
+        style={{
+          background:
+            "linear-gradient(270deg, rgba(255, 255, 255, 0.68) 0%,rgba(255, 255, 255, 0) 100%)",
+        }}
+      />
+    </div>
     <div className={page === "right" ? styles.home : styles.page}>
       <Typography
         className={classNames(
