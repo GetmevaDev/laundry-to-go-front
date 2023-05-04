@@ -16,6 +16,8 @@ export const VisitUsItem = ({ title, description, image, alt }) => (
 
     <div className={styles.border} />
 
-    <div className={styles.description}>{description}</div>
+    <a className={styles.description} href={`tel:${description}`}>
+      {description}
+    </a>
   </div>
 );

@@ -21,8 +21,6 @@ export const ContactUsScreen = ({
     descriptionBanner={descriptionBanner}
     page="center"
   >
-    {console.log(attributes, "attributes")}
-
     <Source sub="Contact us" />
 
     <ContactInfo contact={attributes?.contact_time} />

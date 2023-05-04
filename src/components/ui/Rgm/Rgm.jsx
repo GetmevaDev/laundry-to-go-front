@@ -13,7 +13,10 @@ export const Rgm = () => (
     <div className={styles.web}>
       Web Design & Digital Marketing
       <div className={styles.by}>
-        by <p className={styles.robert}>Robert Gerov Media</p>
+        by{" "}
+        <Link href="https://robertgerov.com/">
+          <p className={styles.robert}>Robert Gerov Media</p>
+        </Link>
       </div>
     </div>
   </div>

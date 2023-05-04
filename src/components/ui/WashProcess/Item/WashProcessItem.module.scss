@@ -59,6 +59,13 @@
   letter-spacing: -0.2px;
   padding: 20px 25px 50px 25px;
   color: #3f3f3f;
+
+  a {
+    color: #3f3f3f;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 @media screen and (max-width: $tableWidth) {

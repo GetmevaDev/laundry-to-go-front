@@ -17,7 +17,12 @@ export const WashProcessItem = ({ cards }) => (
           />
         </div>
         <div className={styles.text}>{card.text}</div>
-        <div className={styles.description}>{card.description}</div>
+        <div
+          className={styles.description}
+          dangerouslySetInnerHTML={{
+            __html: `	${card.description}`,
+          }}
+        />
       </li>
     ))}
   </ul>

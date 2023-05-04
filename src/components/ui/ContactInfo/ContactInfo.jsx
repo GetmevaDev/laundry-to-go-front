@@ -58,7 +58,7 @@ export const ContactInfo = ({ contact }) => (
         src={contact?.href_map}
         width="100%"
         height="300"
-        style={{ border: 0, borderRadius: "50px" }}
+        style={{ border: 0, borderRadius: "40px" }}
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

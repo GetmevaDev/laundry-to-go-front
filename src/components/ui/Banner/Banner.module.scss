@@ -103,6 +103,19 @@
   .title {
     font-size: 30px;
   }
+
+  .page {
+    top: 55%;
+  }
+
+  .home {
+    left: 50%;
+    right: -50%;
+  }
+
+  .home_description {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: $phoneWidth) {

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import { Button, Typography } from "..";
@@ -15,9 +16,11 @@ export const Competitive = ({ competitive }) => (
 
         <div className={styles.description}>{competitive?.description}</div>
 
-        <Button color="dark" className={styles.button}>
-          {competitive?.button_text}
-        </Button>
+        <Link href={competitive?.button_link}>
+          <Button color="dark" className={styles.button}>
+            {competitive?.button_text}
+          </Button>
+        </Link>
       </div>
       <div className={styles.image}>
         <Image
