@@ -8,7 +8,10 @@
   border: 1px solid #e9e9e9;
   border-radius: 30px;
   align-items: center;
-  padding: 57px 0 63px 0;
+}
+
+.image {
+  margin-top: 57px;
 }
 
 .border {
@@ -34,9 +37,9 @@
 .description {
   font-family: var(--font-rubik);
   font-weight: 600;
-  padding: 43px 39px 0 39px;
   font-size: 20px;
   line-height: 24px;
+  padding: 43px 0 60px 0;
   text-align: center;
   color: #000000;
 

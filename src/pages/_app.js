@@ -7,7 +7,7 @@ import "boxicons/css/boxicons.min.css";
 import "@/styles/globals.scss";
 
 export const rubick = Rubik({
-  weight: ["300", "500", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
   subsets: ["latin"],
   variable: "--font-rubik",

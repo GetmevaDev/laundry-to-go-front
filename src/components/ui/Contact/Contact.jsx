@@ -44,9 +44,12 @@ export const Contact = ({ contact }) => (
 
           <div className={styles.time}>
             <div className={styles.hour}>
-              <div className={styles.day}>
-                {contact?.contact_date_page?.date}
-              </div>
+              <div
+                className={styles.day}
+                dangerouslySetInnerHTML={{
+                  __html: `	${contact?.contact_date_page?.date}`,
+                }}
+              />
             </div>
           </div>
         </div>

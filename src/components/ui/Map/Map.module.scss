@@ -13,10 +13,14 @@
   position: relative;
 }
 
-@media screen and (max-width: $smTableWidth) {
+@media screen and (max-width: $smDesktopWidth) {
   .map {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 50px;
+
+    iframe {
+      border-radius: 0 !important;
+    }
   }
 }
