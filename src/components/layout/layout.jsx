@@ -26,22 +26,26 @@ export const Layout = ({
   page,
   buttonLeftLink,
   buttonRightLink,
+  notFound,
 }) => (
   <Meta title={title} description={description}>
     <header className={styles.layout}>
       <Header />
     </header>
 
-    <Banner
-      image={image}
-      title={titleBanner}
-      description={descriptionBanner}
-      buttonLeft={buttonLeft}
-      buttonRight={buttonRight}
-      page={page}
-      buttonLeftLink={buttonLeftLink}
-      buttonRightLink={buttonRightLink}
-    />
+    {!notFound && (
+      <Banner
+        image={image}
+        title={titleBanner}
+        description={descriptionBanner}
+        buttonLeft={buttonLeft}
+        buttonRight={buttonRight}
+        page={page}
+        buttonLeftLink={buttonLeftLink}
+        buttonRightLink={buttonRightLink}
+      />
+    )}
+
     <main className={classNames(styles.layout, sizes[size])}>{children}</main>
 
     <Footer />
