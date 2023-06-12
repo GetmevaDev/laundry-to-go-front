@@ -19,13 +19,13 @@ export const MainPostScreen = ({
     page="center"
     image={image}
     titleBanner={data?.attributes?.title}
-    ogImage={data?.seo?.image}
-    twitterCard={data?.seo?.twitter_card}
-    twitterDescription={data?.seo?.twitter_description}
-    twitterDomain={data?.seo?.twitter_domain}
-    twitterImage={data?.seo?.twitter_image}
-    twitterTitle={data?.seo?.twitter_title}
-    twitterUrl={data?.seo?.twitter_url}
+    ogImage={data?.attributes?.seo?.image}
+    twitterCard={data?.attributes?.seo?.twitter_card}
+    twitterDescription={data?.attributes?.seo?.twitter_description}
+    twitterDomain={data?.attributes?.seo?.twitter_domain}
+    twitterImage={data?.attributes?.seo?.twitter_image}
+    twitterTitle={data?.attributes?.seo?.twitter_title}
+    twitterUrl={data?.attributes?.seo?.twitter_url}
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
     buttonLeftLink={buttonLeftLink}
@@ -33,6 +33,7 @@ export const MainPostScreen = ({
     buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
   >
+    {console.log(data, "data")}
     <Source sub={data?.attributes?.title} blog="Blog" />
 
     <Post data={data} />
