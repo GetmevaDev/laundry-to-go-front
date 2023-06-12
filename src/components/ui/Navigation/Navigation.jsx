@@ -83,6 +83,11 @@ export const menuItems = [
     path: "/contact-us",
     subMenu: [],
   },
+  {
+    label: "Blog",
+    path: "/blog",
+    subMenu: [],
+  },
 ];
 
 export const Navigation = ({ className }) => {
@@ -118,7 +123,7 @@ export const Navigation = ({ className }) => {
           )}
         >
           {menuItems.map((item) => (
-            <li key={item.item}>
+            <li key={item.label}>
               <Link
                 href={item.path}
                 onClick={() => handleClick(item)}

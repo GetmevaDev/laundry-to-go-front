@@ -15,6 +15,8 @@ export * from "./Logo/Logo";
 export * from "./Map/Map";
 export * from "./Navigation/Navigation";
 export * from "./OurWashFoldProcess/OurWashProcess";
+export * from "./Post/Post";
+export * from "./Posts/Posts";
 export * from "./Provide/Provide";
 export * from "./Rgm/Rgm";
 export * from "./Scheduling/Scheduling";

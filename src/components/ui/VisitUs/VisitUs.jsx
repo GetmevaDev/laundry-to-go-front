@@ -12,7 +12,6 @@ export const VisitUs = ({ visit }) => (
       {visit?.Title}
     </Typography>
 
-    {console.log(visit, "visit")}
     <div className={styles.visit}>
       <VisitUsItem
         title={visit?.visit_item?.title}

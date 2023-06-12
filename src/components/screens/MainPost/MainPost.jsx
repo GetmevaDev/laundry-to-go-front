@@ -1,32 +1,33 @@
 import React from "react";
 
 import { Layout } from "@/components/layout";
-import { Contact, ContactInfo, Source } from "@/components/ui";
+import { Post, Source } from "@/components/ui";
 
-export const ContactUsScreen = ({
-  titleBanner,
+export const MainPostScreen = ({
+  data,
   descriptionBanner,
   image,
   buttonLeft,
   buttonRight,
-  attributes,
   buttonLeftLink,
   buttonRightLink,
 }) => (
   <Layout
-    title={attributes?.seo?.title}
-    description={attributes?.seo?.description}
+    title="Home"
+    description="description"
+    size="layout"
+    page="center"
     image={image}
-    titleBanner={titleBanner}
+    titleBanner={data?.attributes?.title}
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
     buttonLeftLink={buttonLeftLink}
+    className="position"
     buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
-    page="center"
   >
-    <Source sub="Contact us" />
+    <Source sub={data?.attributes?.title} blog="Blog" />
 
-    <ContactInfo contact={attributes?.contact_time} />
+    <Post data={data} />
   </Layout>
 );

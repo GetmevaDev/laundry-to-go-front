@@ -17,13 +17,14 @@ export const Banner = ({
   buttonRightLink,
   buttonLeftLink,
   page,
+  className,
 }) => (
   <section className={page === "right" ? styles.banner : styles.banner_page}>
     <div className={styles.image_inner}>
       <Image
         width={1920}
         height={600}
-        alt={alt}
+        alt="banner"
         src={image}
         className={styles.image}
         style={{
@@ -50,7 +51,12 @@ export const Banner = ({
         {description}
       </p>
     </div>
-    <div className={page === "right" ? styles.buttons_page : styles.buttons}>
+    <div
+      className={classNames(
+        className,
+        page === "right" ? styles.buttons_page : styles.buttons
+      )}
+    >
       <Link href={buttonLeftLink}>
         <Button color="dark">{buttonLeft}</Button>
       </Link>

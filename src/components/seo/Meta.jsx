@@ -1,7 +1,17 @@
 import Head from "next/head";
 import React from "react";
 
-const Meta = ({ title, description, children }) => (
+const Meta = ({
+  title,
+  description,
+  children,
+  twitterCard,
+  twitterDomain,
+  twitterUrl,
+  twitterTitle,
+  twitterDescription,
+  twitterImage,
+}) => (
   <>
     <Head>
       <title>{title}</title>
@@ -12,6 +22,13 @@ const Meta = ({ title, description, children }) => (
           <meta name="description" content={description} />
           <meta name="og:title" content={title} />
           <meta name="og:description" content={description} />
+
+          <meta name="twitter:card" content={twitterCard} />
+          <meta property="twitter:domain" content={twitterDomain} />
+          <meta property="twitter:url" content={twitterUrl} />
+          <meta name="twitter:title" content={twitterTitle} />
+          <meta name="twitter:description" content={twitterDescription} />
+          <meta name="twitter:image" content={twitterImage} />
         </>
       ) : (
         <meta name="robots" content="noindex, nofollow" />

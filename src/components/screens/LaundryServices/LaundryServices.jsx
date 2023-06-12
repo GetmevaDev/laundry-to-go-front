@@ -19,8 +19,14 @@ export const LaundryServicesScreen = ({
   buttonRightLink,
 }) => (
   <Layout
-    title="Pricing"
-    description="description"
+    title={attributes?.seo?.title}
+    description={attributes?.seo?.description}
+    twitterCard={attributes?.seo?.twitter_card}
+    twitterDescription={attributes?.seo?.twitter_description}
+    twitterDomain={attributes?.seo?.twitter_domain}
+    twitterImage={attributes?.seo?.twitter_image}
+    twitterTitle={attributes?.seo?.twitter_title}
+    twitterUrl={attributes?.seo?.twitter_url}
     image={image}
     titleBanner={titleBanner}
     buttonLeft={buttonLeft}
@@ -52,6 +58,7 @@ export const LaundryServicesScreen = ({
         key={item.id}
         width={600}
         height={400}
+        alt={item.image.data.attributes.name}
         reverse={item.reverse}
         image={item.image.data.attributes.url}
         title={item.title}

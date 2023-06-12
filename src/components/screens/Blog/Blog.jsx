@@ -1,9 +1,9 @@
 import React from "react";
 
 import { Layout } from "@/components/layout";
-import { Contact, ContactInfo, Source } from "@/components/ui";
+import { Posts, Source } from "@/components/ui";
 
-export const ContactUsScreen = ({
+export const BlogScreen = ({
   titleBanner,
   descriptionBanner,
   image,
@@ -12,10 +12,11 @@ export const ContactUsScreen = ({
   attributes,
   buttonLeftLink,
   buttonRightLink,
+  data,
 }) => (
   <Layout
-    title={attributes?.seo?.title}
-    description={attributes?.seo?.description}
+    title="Blog"
+    description="description"
     image={image}
     titleBanner={titleBanner}
     buttonLeft={buttonLeft}
@@ -24,9 +25,10 @@ export const ContactUsScreen = ({
     buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
     page="center"
+    className="position"
   >
-    <Source sub="Contact us" />
+    <Source sub="Blog" />
 
-    <ContactInfo contact={attributes?.contact_time} />
+    <Posts data={data} />
   </Layout>
 );

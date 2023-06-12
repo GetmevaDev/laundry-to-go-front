@@ -22,6 +22,22 @@
   color: #0d39b9;
 }
 
+.blog_inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: var(--font-rubik);
+
+  color: #0d39b9;
+}
+
 .path {
   font-family: var(--font-rubik);
   font-style: normal;

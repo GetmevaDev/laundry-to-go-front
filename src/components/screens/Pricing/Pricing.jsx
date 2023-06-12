@@ -21,24 +21,29 @@ export const PricingScreen = ({
   buttonRightLink,
 }) => (
   <Layout
-    title="Pricing"
-    description="description"
+    title={attributes?.seo?.title}
+    description={attributes?.seo?.description}
     image={image}
     size="nolayout"
     titleBanner={titleBanner}
+    twitterCard={attributes?.seo?.twitter_card}
+    twitterDescription={attributes?.seo?.twitter_description}
+    twitterDomain={attributes?.seo?.twitter_domain}
+    twitterImage={attributes?.seo?.twitter_image}
+    twitterTitle={attributes?.seo?.twitter_title}
+    twitterUrl={attributes?.seo?.twitter_url}
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
     buttonLeftLink={buttonLeftLink}
     buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
     page="center"
+    className="pricing"
   >
     <Source sub="Pricing" />
     <Scheduling scheduling={attributes?.cards} />
 
     <Provide provide={attributes?.provide} />
-
-    {console.log(attributes, "attr")}
 
     <ImageText
       title={attributes?.block_item?.title}

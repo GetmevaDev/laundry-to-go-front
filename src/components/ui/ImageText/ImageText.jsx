@@ -13,6 +13,7 @@ export const ImageText = ({
   reverse,
   width,
   height,
+  item,
 }) => (
   <div className={reverse ? styles.image_text : styles.image_text_reverse}>
     <div className={styles.info}>

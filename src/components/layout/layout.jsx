@@ -27,8 +27,24 @@ export const Layout = ({
   buttonLeftLink,
   buttonRightLink,
   notFound,
+  className,
+  twitterCard,
+  twitterDomain,
+  twitterUrl,
+  twitterTitle,
+  twitterDescription,
+  twitterImage,
 }) => (
-  <Meta title={title} description={description}>
+  <Meta
+    title={title}
+    description={description}
+    twitterCard={twitterCard}
+    twitterDescription={twitterDescription}
+    twitterDomain={twitterDomain}
+    twitterImage={twitterImage}
+    twitterTitle={twitterTitle}
+    twitterUrl={twitterUrl}
+  >
     <header className={styles.layout}>
       <Header />
     </header>
@@ -41,6 +57,7 @@ export const Layout = ({
         buttonLeft={buttonLeft}
         buttonRight={buttonRight}
         page={page}
+        className={className}
         buttonLeftLink={buttonLeftLink}
         buttonRightLink={buttonRightLink}
       />
