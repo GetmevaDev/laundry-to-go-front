@@ -13,8 +13,8 @@ export const MainPostScreen = ({
   buttonRightLink,
 }) => (
   <Layout
-    title={data?.attributes?.title}
-    description="description"
+    title={data?.attributes?.seo?.title}
+    description={data?.attributes?.seo?.description}
     size="layout"
     page="center"
     image={image}
@@ -33,6 +33,7 @@ export const MainPostScreen = ({
     buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
   >
+    {console.log(data, "data")}
     <Source sub={data?.attributes?.title} blog="Blog" />
 
     <Post data={data} />
