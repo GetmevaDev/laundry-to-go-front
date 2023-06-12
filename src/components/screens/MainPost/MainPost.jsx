@@ -13,7 +13,7 @@ export const MainPostScreen = ({
   buttonRightLink,
 }) => (
   <Layout
-    title="Home"
+    title={data?.attributes?.title}
     description="description"
     size="layout"
     page="center"
