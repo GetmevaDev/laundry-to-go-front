@@ -9,7 +9,7 @@ import styles from "./Provide.module.scss";
 export const Provide = ({ provide }) => (
   <div className={styles.provide_inner}>
     <div className={styles.provide}>
-      <Typography>{provide?.title}</Typography>
+      <Typography tag="h2">{provide?.title}</Typography>
       <div className={styles.items}>
         {provide?.provide_item?.map((item) => (
           <ProvideItem
