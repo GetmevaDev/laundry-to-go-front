@@ -34,6 +34,7 @@ export const Layout = ({
   twitterTitle,
   twitterDescription,
   twitterImage,
+  ogImage,
 }) => (
   <Meta
     title={title}
@@ -44,6 +45,7 @@ export const Layout = ({
     twitterImage={twitterImage}
     twitterTitle={twitterTitle}
     twitterUrl={twitterUrl}
+    ogImage={ogImage}
   >
     <header className={styles.layout}>
       <Header />

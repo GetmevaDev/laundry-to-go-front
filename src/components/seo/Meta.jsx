@@ -11,6 +11,7 @@ const Meta = ({
   twitterTitle,
   twitterDescription,
   twitterImage,
+  ogImage,
 }) => (
   <>
     <Head>
@@ -22,6 +23,7 @@ const Meta = ({
           <meta name="description" content={description} />
           <meta name="og:title" content={title} />
           <meta name="og:description" content={description} />
+          <meta property="og:image" content={ogImage} />
 
           <meta name="twitter:card" content={twitterCard} />
           <meta property="twitter:domain" content={twitterDomain} />

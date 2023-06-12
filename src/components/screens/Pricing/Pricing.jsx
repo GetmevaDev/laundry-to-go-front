@@ -26,6 +26,7 @@ export const PricingScreen = ({
     image={image}
     size="nolayout"
     titleBanner={titleBanner}
+    ogImage={attributes?.seo?.image}
     twitterCard={attributes?.seo?.twitter_card}
     twitterDescription={attributes?.seo?.twitter_description}
     twitterDomain={attributes?.seo?.twitter_domain}

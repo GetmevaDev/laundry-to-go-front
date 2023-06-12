@@ -21,6 +21,7 @@ export const LaundryServicesScreen = ({
   <Layout
     title={attributes?.seo?.title}
     description={attributes?.seo?.description}
+    ogImage={attributes?.seo?.image}
     twitterCard={attributes?.seo?.twitter_card}
     twitterDescription={attributes?.seo?.twitter_description}
     twitterDomain={attributes?.seo?.twitter_domain}
