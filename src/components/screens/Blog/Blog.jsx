@@ -15,8 +15,14 @@ export const BlogScreen = ({
   data,
 }) => (
   <Layout
-    title="Blog"
-    description="description"
+    title={attributes?.seo?.title}
+    description={attributes?.seo?.description}
+    twitterCard={attributes?.seo?.twitter_card}
+    twitterDescription={attributes?.seo?.twitter_description}
+    twitterDomain={attributes?.seo?.twitter_domain}
+    twitterImage={attributes?.seo?.twitter_image}
+    twitterTitle={attributes?.seo?.twitter_title}
+    twitterUrl={attributes?.seo?.twitter_url}
     image={image}
     titleBanner={titleBanner}
     buttonLeft={buttonLeft}
