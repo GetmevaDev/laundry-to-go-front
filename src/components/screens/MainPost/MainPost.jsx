@@ -33,7 +33,6 @@ export const MainPostScreen = ({
     buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
   >
-    {console.log(data, "data")}
     <Source sub={data?.attributes?.title} blog="Blog" />
 
     <Post data={data} />
