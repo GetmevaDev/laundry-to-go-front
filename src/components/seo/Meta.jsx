@@ -17,7 +17,7 @@ const Meta = ({
     <Head>
       <title>{title}</title>
       <link rel="icon" href="/svg/logo.svg" />
-
+      <link rel="canonical" href={twitterUrl} />
       {description ? (
         <>
           <meta name="description" content={description} />

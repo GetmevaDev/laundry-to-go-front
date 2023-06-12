@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://laundrytogony.com/sitemap.xml
