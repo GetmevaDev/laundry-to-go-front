@@ -4,9 +4,16 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+
       <body>
         <Main />
         <NextScript />
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6QCMGD"
+ height="0" width="0" style="display:none;visibility:hidden"/>`,
+          }}
+        />
       </body>
     </Html>
   );

@@ -29,7 +29,7 @@ export const MainPostScreen = ({
     buttonLeft={buttonLeft}
     buttonRight={buttonRight}
     buttonLeftLink={buttonLeftLink}
-    className="position"
+    className="post"
     buttonRightLink={buttonRightLink}
     descriptionBanner={descriptionBanner}
   >

@@ -37,6 +37,16 @@
   color: #3f3f3f;
 }
 
+.description_img {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  font-family: var(--font-rubik);
+  color: #3f3f3f;
+  padding-top: 10px;
+}
+
 @media (max-width: $tableWidth) {
   .image {
     width: 100%;

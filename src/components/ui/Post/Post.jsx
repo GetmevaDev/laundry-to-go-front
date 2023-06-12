@@ -10,15 +10,23 @@ export const Post = ({ data }) => {
   });
 
   const description = md.render(data?.attributes?.description);
+  const descriptionImg = md.render(data?.attributes?.title_under_img);
   return (
     <div className={styles.post}>
-      <Image
-        width={585}
-        height={468}
-        src={data?.attributes?.image?.data?.attributes?.url}
-        alt={data?.alt}
-        className={styles.image}
-      />
+      <div className={styles.left}>
+        <Image
+          width={585}
+          height={468}
+          src={data?.attributes?.image?.data?.attributes?.url}
+          alt={data?.alt}
+          className={styles.image}
+        />
+
+        <div
+          className={styles.description_img}
+          dangerouslySetInnerHTML={{ __html: descriptionImg }}
+        />
+      </div>
 
       <div
         className={styles.description}

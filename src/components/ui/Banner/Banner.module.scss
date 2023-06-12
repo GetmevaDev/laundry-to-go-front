@@ -3,6 +3,7 @@
 .image_inner {
   display: inline-block;
   position: relative;
+  width: 100%;
 
   &:after {
     content: "";
