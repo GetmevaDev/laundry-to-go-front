@@ -23,14 +23,13 @@ export const Post = ({ data }) => {
         />
 
         <div
-          className={styles.description_img}
-          dangerouslySetInnerHTML={{ __html: descriptionImg }}
+          className={styles.description}
+          dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
-
       <div
-        className={styles.description}
-        dangerouslySetInnerHTML={{ __html: description }}
+        className={styles.description_img}
+        dangerouslySetInnerHTML={{ __html: descriptionImg }}
       />
     </div>
   );

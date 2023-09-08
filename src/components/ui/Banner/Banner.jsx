@@ -50,19 +50,20 @@ export const Banner = ({
       >
         {description}
       </p>
-    </div>
-    <div
-      className={classNames(
-        className,
-        page === "right" ? styles.buttons_page : styles.buttons
-      )}
-    >
-      <Link href={buttonLeftLink}>
-        <Button color="dark">{buttonLeft}</Button>
-      </Link>
-      <a href={`tel:${buttonRightLink}`}>
-        <Button color="blue">{buttonRight}</Button>
-      </a>
+
+      <div
+        className={classNames(
+          className,
+          page === "right" ? styles.buttons_page : styles.buttons
+        )}
+      >
+        <Link href={buttonLeftLink}>
+          <Button color="dark">{buttonLeft}</Button>
+        </Link>
+        <a href={`tel:${buttonRightLink}`}>
+          <Button color="blue">{buttonRight}</Button>
+        </a>
+      </div>
     </div>
   </section>
 );

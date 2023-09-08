@@ -34,7 +34,6 @@ export const BlogScreen = ({
     page="center"
     className="position"
   >
-    {console.log(attributes, "attr")}
     <Source sub="Blog" />
 
     <Posts data={data} />

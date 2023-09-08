@@ -7,6 +7,14 @@
   margin-bottom: 100px;
 }
 
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 .img {
   border-radius: 30px;
 }
@@ -15,7 +23,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 48px;
+  line-height: 25px;
   padding-top: 6px;
   font-family: var(--font-rubik);
   color: #000000;

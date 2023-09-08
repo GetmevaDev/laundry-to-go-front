@@ -36,7 +36,7 @@ const Post = ({ attributes }) => {
       <div className={styles.title}>{attributes?.title}</div>
       <div
         className={styles.description}
-        dangerouslySetInnerHTML={{ __html: truncateText(description, 150) }}
+        dangerouslySetInnerHTML={{ __html: truncateText(description, 100) }}
       />
 
       <Link href={`blog/${attributes?.slug}`}>
