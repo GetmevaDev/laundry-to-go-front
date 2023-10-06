@@ -1,7 +1,5 @@
 import classNames from "classnames";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 
 import { Button, Typography } from "..";
 
@@ -57,9 +55,9 @@ export const Banner = ({
           page === "right" ? styles.buttons_page : styles.buttons
         )}
       >
-        <Link href={buttonLeftLink}>
+        {/* <Link href={buttonLeftLink}>
           <Button color="dark">{buttonLeft}</Button>
-        </Link>
+        </Link> */}
         <a href={`tel:${buttonRightLink}`}>
           <Button color="blue">{buttonRight}</Button>
         </a>
