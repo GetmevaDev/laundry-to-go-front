@@ -11,7 +11,7 @@ import styles from "./Posts.module.scss";
 
 export const Posts = ({ data }) => (
   <div className={styles.posts}>
-    {data?.map((post) => (
+    {data?.reverse().map((post) => (
       <Post {...post} key={post.id} />
     ))}
   </div>
