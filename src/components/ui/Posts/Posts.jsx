@@ -9,13 +9,17 @@ import { Button } from "..";
 
 import styles from "./Posts.module.scss";
 
-export const Posts = ({ data }) => (
-  <div className={styles.posts}>
-    {data?.reverse().map((post) => (
-      <Post {...post} key={post.id} />
-    ))}
-  </div>
-);
+export const Posts = ({ data }) => {
+  const reverseData = data.sort((a, b) => a.id - b.id);
+
+  return (
+    <div className={styles.posts}>
+      {reverseData.map((post) => (
+        <Post {...post} key={post.id} />
+      ))}
+    </div>
+  );
+};
 
 const Post = ({ attributes }) => {
   const md = new MarkdownIt({
