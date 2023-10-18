@@ -10,7 +10,7 @@ import { Button } from "..";
 import styles from "./Posts.module.scss";
 
 export const Posts = ({ data }) => {
-  const reverseData = data.sort((a, b) => a.id - b.id);
+  const reverseData = data.sort((a, b) => b.id - a.id);
 
   return (
     <div className={styles.posts}>
